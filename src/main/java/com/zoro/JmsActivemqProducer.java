@@ -42,6 +42,7 @@ public class JmsActivemqProducer {
 
             System.out.println("消息已发送");
 
+            session.close();
         } catch (JMSException e) {
             e.printStackTrace();
         }finally {
